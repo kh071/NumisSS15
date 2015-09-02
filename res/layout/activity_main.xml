@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.test2.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView_explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/explanation"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@drawable/logo_numis"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_numis" />
+
+    <TextView
+        android:id="@+id/description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@drawable/logo_numis"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/description_title"
+        android:textColor="@color/numis_orange"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/description_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_title"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/description_find"
+        android:textColor="@color/numis_orange"
+        android:textSize="34sp" />
+
+</RelativeLayout>
